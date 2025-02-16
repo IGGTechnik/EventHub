@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "e2fdJIkKN6j5pTJyQBs8mIsbLJ5ZWIpjXaxlw+/nqPA=",
+  "Source": "EventHub.GraphQL",
+  "BasePath": "_content/EventHub.GraphQL",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
