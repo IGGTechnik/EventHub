@@ -1,7 +1,5 @@
 ﻿using EventHub.GraphQL.DTO;
-using EventHub.GraphQL.Repositories.Events;
 using HotChocolate.Authorization;
-using Microsoft.EntityFrameworkCore;
 
 namespace EventHub.GraphQL.GraphQL.Queries
 {
@@ -16,9 +14,15 @@ namespace EventHub.GraphQL.GraphQL.Queries
             return dbContext.Events.First(options => options.Id == id);
         }
 
-        public String admin()
+        public String ConnectionTest()
         {
-            return "admin";
+            return "Connection succeded!";
+        }
+
+        [Authorize]
+        public String AuthConnectionTest()
+        {
+            return "Authenticated connection succeeded!";
         }
     }
 }
